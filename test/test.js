@@ -13,9 +13,8 @@ describe('First two terms', function() {
     });
 });
 
-describe('Second two terms', function() {
-  it('should return 1 and 2 for second two terms', function() {
-      assert.strictEqual(main.fibonacci(2), 1);
-      assert.strictEqual(main.fibonacci(3), 2);
+describe('negative case', function() {
+  it('should return undefined for negative', function() {
+      assert.strictEqual(main.fibonacci(-1), undefined);
     });
 });
